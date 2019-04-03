@@ -1,0 +1,99 @@
+{% include '/common/header.twig' %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+{% include '/common/navbar.twig' %}
+    {% include '/common/main_0.twig' %}
+        <h3>The Project</h3>
+        <span class="animated fadeIn faster">
+        <p>
+            <br>I went into this project with the essential question “How Can I Effectively Design and Code a Website That Serves a Practical Purpose?”
+            <br>My goal was to make a website that could <em>do</em> something. A website that wasn't just some static pages sitting on a server, but an application that could be used for something.
+        </p>
+        <p>
+            My pre-product prep work:
+            <a href="files/pc.docx">
+                <img src="files/pc.png">
+            </a>
+            <a href="files/pp.docx">
+                <img src="files/pp.png">
+            </a><br>
+            Note that my thoughts about <em>how</em> I would make my product are completely different in these documents. Like that one section on why I wouldn't be using PHP. But here I am with a website using PHP frameworks...<br>
+        </p>
+        <p>
+            My Design Files:
+            <a href="files/sitemap.pdf">
+                <img src="files/sitemap.png">
+            <a href="files/design.pdf">
+                <img src="files/design.png">
+            </a>
+            <a href="files/design2.pdf">
+                <img src="files/design2.png">
+            </a>
+            <a href="files/design3.pdf">
+                <img src="files/design3.png">
+            </a>
+            <a href="files/form.pdf">
+                <img src="files/form.png">
+            </a>
+            <br>Files were made in Adobe illustrator, but I converted them to PDF for better accessibility. Designs are in order of creation. Design3.pdf &amp; Form.pdf are the final renditions.
+        </p>
+
+        <hr style="style-eight">
+
+        <h3>How the Application Works</h3>
+        <p>
+            <a href="https://github.com/RareformKRozhkov/SeniorShowcase" target="_blank" class="normal">
+                Source Code on GitHub
+            </a>
+        </p>
+        <br>
+        <div class="row">
+            <div class="col-md-6 brd">
+                <div class="center-block">
+                    <i class="fas fa-arrow-right"></i> 
+                    <u>Slim</u> – A micro framework for web applications.
+                    <br>
+                    <a href="http://www.slimframework.com/docs/" class="normal">http://www.slimframework.com/docs/</a>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I used Slim primarily for its routing capabilities. This is how each page is dynamically created. Slim is checking to see what number or name is coming after /pages/ and /user/ respectively, and then pulling the data that correlates with it. It then sends this data to a twig template.
+                </div>
+            </div>
+            <div class="col-md-6 brd">
+                <div class="center-block"><i class="fas fa-arrow-right"></i> <u>Twig</u> – A PHP template engine.<br><a href="https://twig.symfony.com/doc/2.x/" class="normal">https://twig.symfony.com/doc/2.x/</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twigs role is to template out what the base user page looks like, with places for each piece of data that slim sends its way. It also hold the templates for the Header, Footer, and Navigation Bar, so that they don’t have to be copy pasted in to every page on the site, but can just be linked to through a template.
+                </div>
+            </div>
+        </div>
+        <p>
+            <br>
+            <i class="fas fa-arrow-right"></i> 
+            <u>SQLite</u> - A relational database mangement system.<br>
+            <a href="https://www.sqlite.org/index.html" class="normal">
+                https://www.sqlite.org/index.html
+            </a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQLite was used for this project because of its simplicity. SQLite databases are stored simply in a .sqlite file, and don't require much effort at all to set up and manage. It is also simplier to connect to it with PDO, as it doesn't need any sort of authentication, you just need to link to its location.
+        </p>
+
+        <hr>
+        <h3>Coding the Design</h3>
+        <p>
+            <br>
+            <i class="fas fa-arrow-right"></i> 
+            <u>Bootstrap</u> - A framework for HTML &amp; CSS designs.
+            <br>
+            <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" class="normal">
+                https://getbootstrap.com/docs/4.3/getting-started/introduction/
+            </a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I used Bootstrap for help with coding my designs into actuality. The idea with Bootstrap is that there is no point in coding a navbar, if countless people already have before you. No need to re-invent the wheel per se. With Bootstrap I was able to easily throw a navbar onto my site, and style it with ease. Bootstrap's grid system also came in handy &ndash; It is infact used on this page in the section above to set the 'Slim' section in a column of its own, apart from the 'Twig' section, while stil having them both on the same row.
+        </p>
+        <p>
+            <i class="fas fa-arrow-right"></i> 
+            <u>FontAwesome</u> - A Library of Vector Icons.
+            <br>
+            <a href="https://fontawesome.com/" class="normal">
+                https://fontawesome.com/
+            </a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I used FontAwesome for the icons that you see on the site. There are only a few, but it adds detail to the site. You can see some in use on the footer of the landing page.
+        </p>
+
+        </span>
+    {% include '/common/main_1.twig' %}
+{% include '/common/footer.twig' %}

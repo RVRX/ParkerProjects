@@ -1,0 +1,25 @@
+{
+    "name": "dreadnip/basic-slim",
+    "description": "My own version of the Slim basic boilerplate",
+    "keywords": [],
+    "homepage": "http://github.com/dreadnip/basic-slim",
+    "require": {
+        "php": ">=7.2",
+        "slim/slim": "^3.12",
+        "slim/twig-view": "^2.4",
+        "davidepastore/slim-validation": "^0.5.1",
+        "zeuxisoo/slim-whoops": "0.6.*"
+    },
+    "require-dev": {
+        
+    },
+    "autoload-dev": {
+        "psr-4": {
+            
+        }
+    },
+	"scripts": {
+        "start": "php -S localhost:8080 -t public public/index.php"
+	}
+
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137175564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137175564-1');
+</script>
+
+	<title>Parker Projects</title>
+  <meta content="A Showcase of the Class of 2019s Senior Projects at Francis W. Parker school." name="description" />
+  <meta content="Francis W. Parker Charter Essential School, Parker, Parker Projects, parkerprojects, Devens, Senior Project, Cole Manning" name="keywords" />
+  <link href="https://parkerprojects.info/" rel="canonical">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet"> 
+  	{# BootStrap CSS #}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="/css/landing.css">
+  <link rel="stylesheet" type="text/css" href="/css/btn.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container text-center">
+  <div class="row">
+        <nav class="animated fadeIn delay-2s">
+          <ul class="nav float-right">
+            <li class="nav-item" style="padding-top: 10px;">
+              <a href="/form.php" class="nav-link btn-primary btn-xs rounded" onclick="">Submit Project</a>
+            </li>
+          </ul>
+        </nav>
+  </div>
+  <div class="row">
+    <div class="col">
+      {# 1 of 3 #}
+    </div>
+    <div class="col">
+      {# 2 of 3 #}
+      <br><br><img src="files/logo-w-sm.png" class="animated fadeInDown slow" style="padding-top: 10px;">
+    </div>
+    <div class="col">
+      {# 3 of 3 #}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      {# 1 of 3 #}
+    </div>
+    <div class="col animated fadeIn slow delay-1s">
+      {# 2 of 3 #}
+      <br><br><br><h3>Parker Projects</h3>
+    </div>
+    <div class="col">
+      {# 3 of 3 #}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      {# 1 of 3 #}
+    </div>
+    <div class="col animated fadeIn slow delay-1s">
+      {# 2 of 3 #}
+      <p><em>A Showcase of the Class of 2019's <br>Senior Projects at Parker</em></p>
+    </div>
+    <div class="col">
+      {# 3 of 3 #}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      {# 1 of 3 #}
+    </div>
+    <div class="col animated fadeIn fast" id="delay-1a3qs">
+      {# 2 of 3 #}
+      <br><button type="button" class="btn rounded btn-success" onclick="whenClicked()" id="btnSubmit">View Projects</button>
+    </div>
+    <div class="col">
+      {# 3 of 3 #}
+    </div>
+  </div>
+</div>
+    <footer>
+        <div>
+             IN DEVELOPMENT (Update 4/2)<br><a href="#GITHUBLINK"><i class="fab fa-github"></i> Source</a> | <a href="/about">About</a> | <a href="contact [at] parkerprojects.info" rel="nofollow" onclick="this.href='mailto:' + 'contact' + '@' + 'parkerprojects.info'"><i class="far fa-envelope"></i> Contact</a>
+        </div>
+    </footer>
+<script>
+
+function whenClicked() {
+  window.location.href = "/list.php";
+}
+
+ function whenClickedRedirect(){
+    $("body").fadeOut(1000,function(){
+       window.location.href = "http://test.example.com/;"
+    })
+ }
+
+// PLAN
+// call two functions https://stackoverflow.com/questions/3910736/how-to-call-multiple-javascript-functions-in-onclick-event
+// one does body fade to white
+// other does redirect
+
+// https://stackoverflow.com/questions/23458981/jquery-redirect-fadeout-fadein
+
+ // $(function(){
+ //    $("body").fadeOut(1000,function(){
+ //       window.location.href = "http://test.example.com/;"
+ //    })
+ // });
+
+ function funcOne() {
+  window.location
+ }
+
+</script>
+
+{% include '/common/footer.twig' %}

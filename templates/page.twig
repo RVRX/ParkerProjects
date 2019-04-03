@@ -1,0 +1,52 @@
+{% include '/common/header.twig' %}
+
+{% include '/common/navbar.twig' %}
+<div id="centerwhite container" style="height:100%;">
+    <div class="main container" style="height:100%;">
+{# gets 'user' & 'message' definitions from routes.php #}
+
+{# START IF #}
+        {% if user is defined %}
+        <div class="titles">
+            <h3>{{ user.eq }}</h3>
+            <h4>{{ user.name }}</h4>
+        </div>
+        <div class="bio">
+        	<p class="bio indent">{{ user.bio }}</p>
+        </div>
+    {# START Images #}
+        <div class="text-center">
+            {% if user.url is defined %}
+                {% if user.url is not empty %}
+                   <p class="bio"><a href="{{ user.url }}">{{ user.url }}</a></p><br>
+                {% endif %}
+            {% endif %}
+
+            {% if user.img1 is not empty %}
+                <a target="_blank" href="data:image/png;base64,{{ user.img1 }}">
+                    <img src="data:image/png;base64,{{ user.img1 }}" alt="{{ user.name }}&#8217;s first project image" style="width:250px" class="img-thumbnail">
+                </a>
+            {% endif %}
+
+            {% if user.img2 is not empty %}
+                <a target="_blank" href="data:image/png;base64,{{ user.img2 }}">
+                    <img src="data:image/png;base64,{{ user.img2 }}" alt="{{ user.name }}&#8217;s second project image" style="width:250px" class="img-thumbnail mx-auto">
+                </a>
+            {% endif %}
+
+            {% if user.img3 is not empty %}
+                <a target="_blank" href="data:image/png;base64,{{ user.img3 }}">
+                    <img src="data:image/png;base64,{{ user.img3 }}" alt="{{ user.name }}&#8217;s third project image" style="width:250px" class="img-thumbnail">
+                </a>
+            {% endif %}
+        </div>
+    {# END Images #}
+
+        </div>
+        {% elseif message is defined %}
+        	<p>{{ message }}</p>
+        {% endif %}
+</div>
+{# END IF #}
+
+{% include '/common/footer.twig' %}
