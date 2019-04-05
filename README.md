@@ -11,4 +11,4 @@ _All Dependencies can be installed using [Composer](https://getcomposer.org/) wi
 
 
 ## Note
-Some things are different in this version then what is live on the site, for security reasons, and due to me updating the site after posting this. This repo is just to serve as a show of the code of the site's application and stuff.
+Some things are different in this version compared to what is live on the site, for security reasons, and due to me updating the site after posting this. This repo is just to serve as a show of the code of the site's application and stuff.
