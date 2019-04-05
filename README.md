@@ -8,3 +8,7 @@ This Project is to be a website showcasing the senior projects of my peers at Pa
 
 _All Dependencies can be installed using [Composer](https://getcomposer.org/) with:_
 `composer update` (must be run in the project root directory)
+
+
+
+Some things are different in this version then what is live on the site, for security reasons, and due to me updating the site after posting this. This repo is just to serve as a show of the code of the site's application and stuff.
