@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Senior Project Showcase - Index</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <!--   {# BootStrap CSS #} -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/btn.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/animate.css">
+</head>
+<body>
+
+<!-- START Navbar -->
+<div class="greenstuff">
+    <div class="container navbar-default navbar">
+        <h3><a href="/" class="nostyle">Parker Projects</a></h3>
+        <nav class="">
+            <ul class="nav float-right">
+                <li class="nav-item">
+                    <a class="nav-link btn-xs btn-primary rounded">View Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link btn-xs btn-primary rounded">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="form.html" class="nav-link btn-primary btn-xs rounded">Submission Form</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- END Navbar -->
+<div id="centerwhite container">
+    <div class="main text-center container">
+        <div class="titles"><h3>Index</h3><br><br></div>
+        <div class="normal list">
+
+            <div id="YEARFORM">
+                <form action="" name="yearform" method="post">
+                    <div class="row">
+                        <!-- <div class="col"> -->
+                        <label for="year" hidden>Year&nbsp;</label>
+                        <select project="year" id="year" name="year" class="custom-select" style="width: auto;" hidden>
+                            <option value="not set">All Years</option>
+                            <option value="2019">2019</option>
+                            <!--         <option value="2020">2020</option>
+                                    <option value="2021">2021</option> -->
+                        </select>
+                        <!-- </div> -->
+                        <div class="col">
+                            <label for="project">Project Type&nbsp;</label>
+                            <select project="project" id="project" name="project" class="custom-select"
+                                    style="width: auto;">
+                                <!-- value capitalization matters! -->
+                                <option value="not set">All Types</option>
+                                <option value="programming">Coding / Programming</option>
+                                <option value="art">Art</option>
+                                <option value="food">Food Related</option>
+                                <option value="automotive">Automotive Related</option>
+                                <option value="history">History Related</option>
+                                <option value="health">Health / Wellness Related</option>
+                                <option value="environment">Environment Related</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="product">Product Type&nbsp;</label>
+                            <select project="product" id="product" name="product" class="custom-select"
+                                    style="width: auto;">
+                                <option value="not set">All Types</option>
+                                <option value="physical">Crafted Something Physical</option>
+                                <option value="website">Website / Blog</option>
+                                <option value="application">Application</option>
+                                <option value="lessonplan">Lesson Plan</option>
+                                <option value="podcast">Podcast</option>
+                                <option value="video">Video</option>
+                                <option value="pdf">Book / PDF</option>
+                                <option value="poster">Poster / Exhibit</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" name="submit" id="submit"
+                            class="nav-link btn-xs btn-primary rounded btn-submit">Load Projects
+                    </button>
+                </form>
+            </div>
+
+
+            <p>
+
+                <div class="hide animated fadeInUpBig faster">
+            <p><a href="pages/2.html"><b>Name</b> &ndash; Your essential question?</a></p><br></div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137175564-1');
+    </script>
+
+    <title>Information Submission Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <!--   {# BootStrap CSS #} -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/btn.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/animate.css">
+</head>
+<body>
+<!-- START Navbar -->
+<div class="greenstuff">
+    <div class="container navbar-default navbar">
+        <h3><a href="/" class="nostyle">Parker Projects</a></h3>
+        <nav class="">
+            <ul class="nav float-right">
+                <li class="nav-item">
+                    <a href="list.html" class="nav-link btn-xs btn-primary rounded">View Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link btn-xs btn-primary rounded">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="form.html" class="nav-link btn-primary btn-xs rounded">Submission Form</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- END Navbar -->
+<div id="centerwhite container">
+
+    <div class="container main" style="height: 108%;">
+        <span class="animated fadeIn faster"><h3><b>Submission Form</b></h3><p class="animated flash slow" id="delay-0a1hs">&nbsp;&nbsp;<a href="/formhelp" class="normal">Read Me First</a></p></span>
+        <div class="animated fadeIn fast" id="delay-0a1qs">
+            <form method="POST">
+                <div class="form-group form-control-lg">
+                    <label for="name">Name<span class="req">*</span></label><br>
+                    <input type="text" name="us_name" class="rounded" id="name" required>
+                </div>
+                <br>
+                <div class="form-group form-control-lg">
+                    <label for="eq">Essential Question<span class="req">*</span></label><br>
+                    <input type="text" name="us_eq" aria-describedby="eqhelp" class="rounded" style="width:70%;" required>
+                    <small id="eqhelp" class="form-text text-muted">&nbsp;Please include the question mark. Capitalize it like you would capitalize a sentence.</small>
+                </div>
+                <br><br>
+                <div class="form-group form-control-lg">
+                    <label for="about">Bio<span class="req">*</span></label><br>
+                    <textarea type="text" name="us_bio" value="DESC" rows="7" aria-describeby="biohelp" class="rounded" style="width:70%;" required></textarea>
+                    <small id="biohelp" class="form-text text-muted">&nbsp;Give an overview of your project and resulting product.</small>
+                </div>
+                <br><br><br><br><br><br><br>
+                <!-- START New Fields -->
+                <div class="row no-margin-left">
+                    <!-- 	<div class="form-group form-control-lg col">
+                            <label for="year">Graduating Year<span class="req">*</span></label><br>
+                            <select id="year" name="us_year" class="custom-select cat">
+                                  <option value="2019">2019</option>
+                                  <option value="2020">2020</option>
+                                  <option value="2021">2021</option>
+                                  <option value="2022">2022</option>
+                                  <option value="2023">2023</option>
+                                  <option value="2024">2024</option>
+                            </select>
+                        </div> -->
+                    <select id="year" name="us_year" class="custom-select cat" hidden>
+                        <option value="2019">2019</option>
+                    </select>
+                    <br>
+                    <div class="form-group form-control-lg col">
+                        <label for="product">Product Type<span class="req">*</span></label><br>
+                        <select name="us_product_category" class="custom-select cat">
+                            <option value="physical">Crafted Something Physical (Made a model, worked on a car, etc.)</option>
+                            <option value="website">Website / Blog</option>
+                            <option value="lessonplan">Lesson Plan</option>
+                            <option value="podcast">Podcast</option>
+                            <option value="video">Video</option>
+                            <option value="application">Computer or Phone Application / Game</option>
+                            <option value="pdf">Book / PDF</option>
+                            <option value="poster">Poster / Exhibit</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group form-control-lg col">
+                        <label for="project">Project Category<span class="req">*</span></label><br>
+                        <select name="us_project_category" class="custom-select cat">
+                            <option value="programming">Coding / Programming</option>
+                            <option value="automotive">Automotive Related</option>
+                            <option value="history">History Related</option>
+                            <option value="environment">Environment Related</option>
+                            <option value="health">Health / Wellness Related</option>
+                            <option value="food">Food Related</option>
+                            <option value="art">Art</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <!-- END New Fields -->
+                <!-- START IMAGES -->
+                <!-- START Labels -->
+
+                <div class="row form-control-lg" style="margin-bottom: -11px; margin-top: 50px;">
+                    <div class="col">
+                        <label for="img1">Image 1</label>
+                    </div>
+                    <div class="col">
+                        <label for="img2">Image 2</label>
+                    </div>
+                    <div class="col">
+                        <label for="img3">Image 3</label>
+                    </div>
+                </div>
+
+                <!-- END Labels -->
+
+                <!-- START Inputs -->
+                <div class="row form-control-lg">
+                    <div class="col">
+                        <div class="form-group">
+                            <input type="file" id="files" name="files" class="rounded">
+                            <input type="hidden" id="base64" name="us_img1" aria-describeby="imghelp" class="rounded" style="width:90%;">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <input type="file" id="filestwo" name="filestwo" class="rounded">
+                            <input type="hidden" id="base64two" name="us_img2" class="rounded" style="width:90%;">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <input type="file" id="filesthree" name="filesthree" class="rounded">
+                            <input type="hidden" id="base64three" name="us_img3" class="rounded" style="width:90%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <small id="imghelp" class="form-text text-muted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you have any pictures of your product, or any images related to your project, upload them here.</small>
+                </div>
+                <!-- END Inputs-->
+                <!-- END IMAGES -->
+                <br>
+                <div class="form-group form-control-lg">
+                    <label for="url">Important URL or Link</label><br>
+                    <input type="url" id="url"	name="us_url" class="rounded" aria-describeby="urlhelp">
+                    <small id="urlhelp" class="form-text text-muted">&nbsp;Must include "http://".&nbsp;&nbsp;If your product (or an element of it) exists on the web, put a link to it here.</small>
+                </div>
+                <br><br><br>
+                <div class="form-group form-control-lg">
+                    <label for="password">Form Password<span class="req">*</span> &nbsp;</label>
+                    <input type="text" name="password" id="password" class="rounded" aria-describeny="passhelp" required>
+                    <small id="passhelp" class="form-text text-muted">Put the password you were sent in the email here.<br>Make sure this is correct &#8212; or have fun re-typing everything.</small>
+                </div>
+                <br><br><br><button type="submit" class="nav-link btn-xs btn-primary rounded btn-submit">Submit</button><small class="text-muted">Only Click Once, Might take some time to load.</small>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
