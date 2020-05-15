@@ -1,0 +1,44 @@
+/*
+SSP for titles
+OS for body
+*/
+
+body {
+	background-color: #006f42;
+	font-size: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#delay-1hs {
+	animation-delay: 1.5s;
+}
+
+#delay-hs, #delay-0hs {
+	animation-delay: 0.5s;
+}
+
+#delay-2hs {
+	animation-delay: 2.5s;
+}
+
+#delay-1a3qs {
+	animation-delay: 1.75s;
+}
+
+/* FOOTER */
+footer,#back{opacity:0.5;position:fixed;bottom:4px;right:4px;font-size:14px;white-space:nowrap;overflow:hidden;text-shadow:0 0 0.5em black;-moz-transition:0.25s ease opacity;-o-transition:0.25s ease opacity;-webkit-transition:0.25s ease opacity;transition:0.25s ease opacity}
+footer:hover,#back:hover{opacity:1}
+footer div{float:right;padding:2px 4px}
+footer a:link, a:visited {
+	color:inherit;
+	text-decoration: none;
+}

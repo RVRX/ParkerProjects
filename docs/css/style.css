@@ -1,0 +1,270 @@
+html,body { height:100%; }
+
+/*.nav-item {
+	font-family: 'Source Sans Pro', sans-serif;
+}*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Other styles */
+
+body {
+	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	color: #333;
+	background-color: #f0f0f0;
+	font-size: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h4 {
+	color: rgba(25,25,25,0.65);
+	font-size: 120%;
+}
+
+p {
+	margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.main, .main-2 {
+	padding: 2rem;
+	height: 93%;
+}
+
+.navbar {
+	background-color: #006f42;
+	color: white;
+}
+
+div.main {
+	background-color: white;
+}
+
+div.main-2 {
+	background-color: #006f42;
+	color: white;
+}
+
+div.main-1 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,006f42+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #006f42 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#006f42 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#006f42 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#006f42',GradientType=0 ); /* IE6-9 */
+}
+
+div.main-3 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006f42+1,ffffff+100 */
+background: #006f42; /* Old browsers */
+background: -moz-linear-gradient(top, #006f42 1%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #006f42 1%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #006f42 1%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006f42', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+div.bio {
+	vertical-align: middle; /*do i need?*/
+	display: flex; 
+    width: 90%; 
+    /*height: 200px; */
+    margin: auto; 
+}
+
+div.greenstuff {
+	background-color: #006f42;
+	box-shadow: 0px 7px 5px rgba(0,0,0,0.25);
+	z-index: 1000;
+	position: relative;
+}
+
+.greenbkg {
+	background-color: #006f42;
+}
+
+/*no longer need*/
+.centered {
+	display: flex; 
+    width: 90%; 
+    height: 200px; 
+    margin: auto; 
+    /*border-radius: 10px; */
+/*    border: 3px dashed #1c87c9; */
+}
+
+p.bio {
+	margin: auto;
+}
+
+img.img-thumbnail {
+	/*padding: 100px;*/
+	margin-right: 50px;
+	margin-left: 50px;
+	/*max-height: 400px;*/
+}
+
+a {
+	color: grey;
+}
+
+a.normal {
+	color: cornflowerblue;
+}
+
+.list, div.list a {
+	line-height: normal;
+	/*color: #006f42;*/
+	color: black;
+}
+
+div.list a:hover {
+	color: #005332;
+	text-decoration: none;
+}
+
+div.list p {
+	margin-bottom: 7px;
+}
+
+/*Form Styles*/
+input, textarea {
+	/*border-color: #006f42;*/
+	border: 2px solid #006f42;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	background-color: #f0f0f0;
+	padding-left: 5px;
+
+}
+
+[type=file] {
+	padding-left: 0px;
+	/*padding-top: -10px;*/
+
+}
+
+textarea {
+	resize: none;
+}
+
+input {
+	height: 31px;
+}
+
+#name {
+	width: 250px;
+}
+
+#url {
+	width: 650px;
+}
+
+.req {
+	color: red;
+}
+/* End of Form Styles*/
+
+.centertext {
+	text-align: center;
+}
+
+a.nostyle {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*#centerwhite {
+	background-color: white;
+}*/
+
+.indent {
+	text-indent: 2.5em;
+}
+
+#vertcenter {
+	vertical-align: bottom;
+}
+
+#delay-1hs {
+	animation-delay: 1.5s;
+}
+
+#delay-hs, #delay-0hs {
+	animation-delay: 0.5s;
+}
+
+#delay-2hs {
+	animation-delay: 2.5s;
+}
+
+#delay-1a3qs {
+	animation-delay: 1.75s;
+}
+
+#delay-0a1qs {
+	animation-delay: 0.25s;
+}
+
+/* FOOTER */
+footer,#back{opacity:0.5;position:fixed;bottom:4px;right:4px;font-size:14px;white-space:nowrap;overflow:hidden;text-shadow:0 0 0.5em black;-moz-transition:0.25s ease opacity;-o-transition:0.25s ease opacity;-webkit-transition:0.25s ease opacity;transition:0.25s ease opacity}
+footer:hover,#back:hover{opacity:1}
+footer div{float:right;padding:2px 4px}
+footer:a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+#imghelp {
+	font-size: 16px;
+}
+
+/* 
+Underline Styles 
+Code from https://css-tricks.com/styling-underlines-web/#article-header-id-4
+*/
+.text-shadow {
+  text-shadow:
+    -2px -2px white,
+    -2px 2px white,
+    2px -2px white,
+    2px 2px white;
+}
+
+.underline {
+  background-size: 1px 1em;
+  box-shadow:
+    inset 0 -0.175em white,
+    inset 0 -0.2em #006f42;
+  display: inline;
+}
+
+.greentext {
+	color: ForestGreen;
+}
+
+hr {
+	margin: 40px 0 40px 0;
+}
+/* Glyph, by Harry Roberts */ 
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  	
+}
+
+hr:after {
+    background: #fff;
+    content: '§';
+    padding: 0 10px;
+    position: relative;
+    top: -13px;
+}
+
