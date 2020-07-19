@@ -1,5 +1,5 @@
 # Senior Showcase
-This Project is to be a website showcasing the senior projects of my peers at Parker. [See an Example Implementation Live](https://rvrx.github.io/ParkerProjects/)
+This Project is to be a website showcasing the senior projects of my peers at Parker. [See an Example Implementation Live](https://rvrx.github.io/ParkerProjects/). As of 2020 I do have the completed site (with non-example, actual classmate projects)  live on at a different location, available on request.
 
 ## Built Using
 [**Slim**](http://www.slimframework.com/) - a micro framework for PHP.
